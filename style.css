@@ -1,0 +1,166 @@
+/*                              Definições gerais                                     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+
+}
+body {
+    font-family: 'Playfair Display', serif; 
+}
+
+/*                              Definições de seções                                     */
+
+
+.navegacao {
+    position: relative;
+    top: -5px;
+    left: 10px;
+    gap: 8px;
+}
+
+
+.hero {
+    background-image: url(img/corpo/main-store.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    padding-top: 6rem;
+}
+
+.navbar {
+     background: rgba(0, 0, 0, 0.3); 
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5.5rem;
+    z-index: 100;
+}
+
+.section-1 {
+    width: 100%;
+    margin: -100px auto;
+    padding: 9rem 0% 5rem 0%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.botao-contato {
+    display: flex;
+    flex-direction: row;
+}
+
+/*                              Definições de responsividade                                     */
+
+@media (max-width: 390px) {
+
+    .logo-write{
+        font-size: large;
+    }
+
+    .lista {
+        font-size: small;
+    }
+
+    .section-1 > h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-1 > p {
+        font-size: 0.9rem;
+    }
+
+    .section-1 > a {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .logo-write{
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .logo-write{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: flex-end;
+    }
+
+    .navbar {
+        height: 4.5rem;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+    .logo-img{
+        display: none
+    }
+}
+
+
+/*                              Definições imagens                                     */
+
+.logo-img {
+    width: 5rem;
+    position: absolute;
+    top: 9px;
+    left: 48%;
+}
+
+.logo-write {
+    position: relative;
+    top: -10px;
+}
+
+
+.produto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.img-contato {
+    width: 30px;
+    margin-left: 5px;
+}
+
+/*                              Definições do carrossel                                     */
+
+.carousel {
+    margin: .5rem 0 5rem 0;
+}
+
+.seta-carrossel {
+    background-color: blueviolet;
+}
+
+.cards-carrossel {
+    background-color: rgb(255, 200, 0, .1);
+}
+.texto-produtos {
+    color: blueviolet;
+    height: 45px;
+    font-weight: 900;
+    text-shadow:
+        -1px -1px 0 rgba(255, 255, 255, .3),  
+         1px -1px 0 rgba(255, 255, 255, .3),
+        -1px  1px 0 rgba(255, 255, 255, .3),
+         1px  1px 0 rgba(255, 255, 255, .3);
+}
